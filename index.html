@@ -1,12 +1,39 @@
 <html>
-  <head><!--Made by Miguel Del Rio on August 4th, 2016--></head>
+  <head>
+    <!--Made by Miguel Del Rio on August 4th, 2016-->
+  </head>
   <body style="background-color:#e6e6e6;">
-    <img src = "http://www.cooperhistory.com/wp-content/uploads/2016/03/Wikipedia-logo-v2.svg_.png" href="https://www.wikipedia.org/" style="width:300px;height300px;">
-    <h2 style="text-align:center;"><em>The Wikipedia Challenge</em></h2>
-    Start: <input type="text" name="start" value="John Cena">
-    Finish: <input type="text" name="finish" value="Mr. Rogers">
-    <br><button>Begin!</button>
-    <br><button>Randomize!</button>
-    <br><br>Made by Miguel Del Rio
+    <style>
+      .center {
+        text-align: center;
+        vertical-align: middle;
+        margin:auto;
+        width: 200px;
+        height: 200px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      #author {
+        vertical-align: bottom;
+      }
+    </style>
+    <script>
+      function randomize(){
+        document.getElementById("start").value = "Hello";
+        document.getElementById("finish").value = "Goodbye";
+      }
+    </script>
+    <div align = "center" class="center">
+      <a href="https://www.wikipedia.org/">
+        <img class="center" src = "http://www.cooperhistory.com/wp-content/uploads/2016/03/Wikipedia-logo-v2.svg_.png">
+      </a>
+    </div>
+    <h1 class = "text-center"><strong>The Wikipedia Challenge</strong></h1>
+    <p class = "text-center">Start: <input id = "start" type="text" name="start" value="John Cena"></p>
+    <p class = "text-center">Finish: <input id = "finish" type="text" name="finish" value="Mr. Rogers"></p>
+    <br><p class = "text-center"><button>Begin!</button></p>
+    <p class = "text-center"><button onClick = "randomize()">Randomize!</button></p>
+    <p id = "author">Made by Miguel Del Rio</p>
   </body>
 </html>
