@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "WikipediaChallenge",
+  "version": "1.0",
+  "icons": { "16": "W16.png",
+           "48": "W48.png",
+          "128": "W128.png" },
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["background.js","control.js"]
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
